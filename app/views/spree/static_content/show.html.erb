@@ -11,20 +11,9 @@
     <meta name="description" content="<%= @page.meta_description %>">
   <% end -%>
 
-  <% content_for :sidebar do %>
-    <% if (defined?(@products) && @products) && (defined?(@taxon) && @taxon) %>
-      <%= render partial: 'spree/shared/filters' %>
-    <% elsif defined?(@taxonomies) && @taxonomies %>
-      <%= render partial: 'spree/shared/taxonomies' %>
-    <% end %>
-  <% end %>
-
-  <div class="col-sm-12">
-   <h1 class="text-center"><%= @page.title %></h1>
-</div>
   <div id="page_content">
-   <div class="col-sm-12">
-    <%= raw @page.body %>
+    <div class="col-sm-12">
+      <%= raw @page.body %>
     </div>
   </div>
 <% end %>
