@@ -13,6 +13,8 @@
 
 <% @body_id = @page.title %>
     <div id="page_content">
-      <%= raw @page.body %>
+      <div class="col-sm">
+        <%= raw @page.body %>
+      </div>
     </div>
 <% end %>
