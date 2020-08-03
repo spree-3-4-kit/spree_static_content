@@ -32,7 +32,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'simplecov'
-  s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'pry-rails'
